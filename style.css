@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+*{
+    font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+.container{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #1874fc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.image{
+    background-color: #1874fc;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    width: 125px;
+    height: 125px;
+    padding: 5px;
+    border-radius: 50%;
+    z-index: 20;
+    .profile-photo{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 4px solid #fff;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.text{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+    height: 70%;
+    width: 100%;
+    background-color: #fafafa;
+    text-align: center;
+    padding: 35px 0px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    .link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        margin: 0px 8px;
+        border-radius: 50%;
+        background-color: #1874fc;
+        color: #fafafa;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+.btn button{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 5px;
+    background-color: #1874fc;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+        background-color: #1663d7;
+    }
+}
+.data{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+        color: #333333dc;
+        padding: 0px 10px;
+        border-right: 2px solid #e7e7e7;
+        i{
+            transform: translateY(1px);
+        }
+    }
+    span:last-child{
+        border-right: none;
+    }
+}
